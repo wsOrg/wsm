@@ -1,63 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Workspace management</title>
-    <base href="/">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="app/css/navbar.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
 
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
+<head>
+  <title>Workspace management</title>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app/css/navbar.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
 
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('main.js').catch(function(err){ console.error(err); });
-    </script>
-  </head>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-  <body>
-      <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Workspace management</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Salesinbox</a></li>
-                  <li><a href="#">Leads</a></li>
-                  
-                <li class="active"><a href="create_account">Accounts</a></li>
-                <li><a href="#">Dead Accounts</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Dead Contacts</a></li>
-                <li><a href="#">Reports</a></li>
-                <li><a href="#">Products</a></li>
-               
-              </ul>
-<!--              <ul class="nav navbar-nav navbar-right">
+  <script src="systemjs.config.js"></script>
+  <script>
+    System.import('main.js').catch(function (err) { console.error(err); });
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Workspace management</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Salesinbox</a>
+          </li>
+          <li>
+            <a href="#">Leads</a>
+          </li>
+
+          <li class="active">
+            <a href="create_account">Accounts</a>
+          </li>
+          <li>
+            <a href="#">Dead Accounts</a>
+          </li>
+          <li>
+            <a href="#">Contacts</a>
+          </li>
+          <li>
+            <a href="#">Dead Contacts</a>
+          </li>
+          <li>
+            <a href="#">Reports</a>
+          </li>
+          <li>
+            <a href="#">Products</a>
+          </li>
+
+        </ul>
+        <!--              <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
                 <li><a href="../navbar-static-top/">Static top</a></li>
                 <li><a href="../navbar-fixed-top/">Fixed top</a></li>
               </ul>
             </div><!--/.nav-collapse -->
-          -->         </div><!--/.container-fluid -->
-        </nav>
+        --> </div>
+      <!--/.container-fluid -->
+  </nav>
 
-    <my-app>Loading AppComponent content here ...</my-app>
-  </body>
+  <div id="left_hand_nav" class='col-lg-2'>
+    <nav class="nav navbar-dark">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#left-hand-navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="left-hand-navbar" class="navbar-collapse collapse">
+        <ul class="nav nav-pills nav-stacked text-uppercase">
+          <li>
+            <a href="#">Notes</a>
+          </li>
+          <li>
+              <a href="#">Attachments</a>
+            </li><li>
+                <a href="#">Contacts</a>
+              </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <my-app class='col-lg-2'>Loading AppComponent content here ...</my-app>
+</body>
+
 </html>
