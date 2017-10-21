@@ -3,113 +3,106 @@
   <form>
     <div class='col-lg-6'>
       <div class="form-group">
-        <label for="accountName">Account Name</label>
-        <input type="text" class="form-control" id="accountName" aria-describedby="emailHelp" placeholder="Enter name">
+        <label for="Name">Name of customer</label>
+		
+        <input type="text" class="form-control" id="Name" aria-describedby="emailHelp" placeholder="Enter name">
         <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
       </div>
-
+        <div class='col-lg-6'>
       <div class="form-group">
-        <label for="accountStatus">Status</label>
-        <select class="form-control" id="accountStatus">
-          <option>Active</option>
-          <option>Deleted</option>
-          <option>On-hold</option>
-        </select>
+	  <label for="Address">Address of customer</label>
+	   <textarea class="form-control" id="Address" rows="3"></textarea>
       </div>
-
+	  
+	  <div class='col-lg-6'>
       <div class="form-group">
-        <label for="accountOwner">Account Owner</label>
-        <select class="form-control" id="accountOwner">
-          <option>Community Manager</option>
-          <option>Others</option>
-        </select>
+		<label for="Contact">Contact Person</label>
+ <input type="text" class="form-control" id="Contact" aria-describedby="emailHelp" placeholder="Enter name">
       </div>
+<div class='col-lg-6'>
+      <div class="form-group">		
+		<label for="ContactNo">Contact Number</label>
+       <input type="number" class="form-control" id="ContactNo" aria-describedby="emailHelp" placeholder="Enter 10 digit no">
+      </div>
+ 
 
     </div>
     <div class='col-lg-6'>
       <div class="form-group">
-        <label for="masterContactEmail">Master Contact Email</label>
-        <input type="email" class="form-control" id="masterContactEmail" aria-describedby="emailHelp" placeholder="Enter email">
+        <label for="Emailid">Email id</label>
+        <input type="email" class="form-control" id="Emailid" aria-describedby="emailHelp" placeholder="Enter email">
       </div>
-
+	  
+	   <div class='col-lg-6'>
       <div class="form-group">
-        <h2></h2>
-        <label for="location">Location</label>
-        <select class="form-control" id="location">
-          <option>None</option>
-
-          <option>Kormangala</option>
+	  <label for="BHIVElocation">BHIVE location</label>
+	   <select class="form-control" id="BHIVElocation">
+          <option>HSR layout sector 6</option>
+          <option>HSR layout sector 4</option>
           <option>Indiranagar</option>
-          <option>HSR Layout Sector 4</option>
-          <option>HSR Layout Sector 6</option>
-          <option>Residency Road</option>
-          <option>All</option>
+		   <option>Kormangala</option>
+		    <option>Residency road</option>
         </select>
-      </div>
-
+</div>
+</div>
+      <div class='col-lg-6'>
       <div class="form-group">
-        <h2></h2>
-        <label for="sector">Sector</label>
-        <select class="form-control" id="sector">
-          <option>None</option>
-          <option>Automotive</option>
-          <option>Design</option>
-          <option>Internet</option>
-          <option>Marketing and Advertising</option>
-        </select>
+        <label for="AgreementDate">Date of Agreement</label>
+        <input type="date" class="form-control" id="AgreementDate" aria-describedby="dateHelp" placeholder="Enter dd-mm-yyyy">
       </div>
-
+	   </div>
+	  <div class='col-lg-6'>
       <div class="form-group">
-        <h2></h2>
-        <label for="sector">Sector</label>
-        <select class="form-control" id="sector">
-          <option>None</option>
-          <option>ASP (Application Service Provider)</option>
-          <option>Data/Telecom OEM</option>
-          <option>ERP</option>
-          <option>Govt/Military</option>
-          <option>Large Enterprise</option>
-          <option>ManagementISV</option>
-        </select>
+        <label for="Invoice">Name in which Invoice has to be raised </label>
+        <input type="text" class="form-control" id="Invoice" aria-describedby="textHelp" placeholder="Enter name">
       </div>
-
-    </div>
-
-    <div class="form-group">
-      <label for="accountDesc">Description information</label>
-      <input type="text" class="form-control" id="accountDesc" aria-describedby="emailHelp" placeholder="Enter Description">
-    </div>
-
-    <h2>On boarding checklist</h2>
-
-    <div class="form-group">
-      <label class="form-check-label">
-        <input type="checkbox" class="form-check-input"> Welcome mail sent
-      </label>
-    </div>
-    <div class="form-group">
-      <label class="form-check-label">
-        <input type="checkbox" class="form-check-input"> Internet access provided
-      </label>
-    </div>
-
-    <div class="form-group">
-      <label for="cmOnboardExperience">CM's onboarding experience</label>
-      <select class="form-control" id="cmOnboardExperience">
-        <option>None</option>
-        <option>Good</option>
-        <option>Bad</option>
-        <option>Neutral</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="feedback">Feedback</label>
-      <textarea class="form-control" id="feedback" rows="3"></textarea>
-    </div>
-
-    <button class="btn btn-primary pull-right">Save</button>
-    <button class="btn btn-primary pull-right">Save and New</button>
+	  </div>
+	  <div class='col-lg-6'>
+      <div class="form-group">
+        <label for="Reason">Reason for change of name</label>
+        <input type="text" class="form-control" id="Reason" aria-describedby="textHelp" placeholder="Enter a valid reason">
+      </div>
+	  
+	  <div class='col-lg-6'>
+      <div class="form-group">
+        <label for="PAN">Enter PAN no</label>
+        <input type="text" class="form-control" id="PAN" aria-describedby="textHelp" placeholder="Enter the no">
+      </div>
+	  </div>
+	  <div class='col-lg-6'>
+      <div class="form-group">
+        <label for="GST">Enter GST no</label>
+        <input type="text" class="form-control" id="GST" aria-describedby="textHelp" placeholder="Enter the no">
+      </div>
+	  </div>
+	  <div class='col-lg-6'>
+      <div class="form-group">
+        <label for="VAT">Enter VAT/Service tax no</label>
+        <input type="text" class="form-control" id="VAT" aria-describedby="textHelp" placeholder="Enter the no">
+      </div>
+	  </div>
+	  <div class='col-lg-6'>
+      <div class="form-group">
+        <label for="DiffState">Whether the customer's registered office is located other than Karnataka</label>
+        <input type="text" class="form-control" id="DiffState" aria-describedby="textHelp" placeholder="If yes,enter the address">
+      </div>
+	  </div>
+	  <div class='col-lg-6'>
+      <div class="form-group">
+        <label for="BillingRate">Billing rate agreed upon</label>
+        <input type="text" class="form-control" id="BillingRate" aria-describedby="textHelp" placeholder="Enter the amount">
+      </div>
+	  </div>
+	  <div class='col-lg-6'>
+      <div class="form-group">
+        <label for="Deposit">Amount of deposit paid by customer </label>
+        <input type="text" class="form-control" id="Deposit" aria-describedby="textHelp" placeholder="Enter relavent details like NEFT, Cheque no, last 4 digits of CC etc ">
+      </div>	
+</div>
+      
+<button class="btn btn-primary pull-right">Submit</button>
     <button class="btn btn-primary pull-right">Cancel</button>
+	
+    
   </form>
 </div>
