@@ -10,19 +10,16 @@ var platform_browser_1 = require("@angular/platform-browser");
 var ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
 var app_component_1 = require("./app.component");
 var create_account_component_1 = require("./component/create-account.component");
+var rental_agreement_component_1 = require("./component/rental-agreement.component");
 var router_1 = require("@angular/router");
 var appRoutes = [
     { path: 'create_account', component: create_account_component_1.CreateAccountComponent },
     { path: 'account_details', component: create_account_component_1.CreateAccountComponent },
+    { path: 'rental_agreement',component: rental_agreement_component_1.RentalAgreementComponent },
     {
         path: 'home',
         component: create_account_component_1.CreateAccountComponent
     },
-    {
-        path: '',
-        redirectTo: '/create_account',
-        pathMatch: 'full'
-    }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -37,7 +34,7 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             ng_bootstrap_1.NgbModule.forRoot()
         ],
-        declarations: [app_component_1.AppComponent, create_account_component_1.CreateAccountComponent],
+        declarations: [app_component_1.AppComponent, create_account_component_1.CreateAccountComponent, rental_agreement_component_1.RentalAgreementComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
